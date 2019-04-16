@@ -7,6 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0A6FC6225E6759005CCA45 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6FC5225E6759005CCA45 /* CustomTextField.swift */; };
+		FA0A6FC8225E67A6005CCA45 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A6FC7225E67A6005CCA45 /* UIColorExtention.swift */; };
+		FA0A6FEC225E67EA005CCA45 /* VisbyRoundCF-Bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FCB225E67EA005CCA45 /* VisbyRoundCF-Bold.woff2 */; };
+		FA0A6FED225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FCC225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff2 */; };
+		FA0A6FEE225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FCD225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff2 */; };
+		FA0A6FEF225E67EA005CCA45 /* VisbyRoundCF-Medium.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FCE225E67EA005CCA45 /* VisbyRoundCF-Medium.eot */; };
+		FA0A6FF0225E67EA005CCA45 /* VisbyRoundCF-Heavy.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FCF225E67EA005CCA45 /* VisbyRoundCF-Heavy.eot */; };
+		FA0A6FF1225E67EA005CCA45 /* VisbyRoundCF-Regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD0225E67EA005CCA45 /* VisbyRoundCF-Regular.woff2 */; };
+		FA0A6FF2225E67EA005CCA45 /* VisbyRoundCF-Light.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD1225E67EA005CCA45 /* VisbyRoundCF-Light.woff */; };
+		FA0A6FF3225E67EA005CCA45 /* VisbyRoundCF-Medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD2225E67EA005CCA45 /* VisbyRoundCF-Medium.woff */; };
+		FA0A6FF4225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD3225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff */; };
+		FA0A6FF5225E67EA005CCA45 /* VisbyRoundCF-Light.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD4225E67EA005CCA45 /* VisbyRoundCF-Light.eot */; };
+		FA0A6FF6225E67EA005CCA45 /* VisbyRoundCF-Medium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD5225E67EA005CCA45 /* VisbyRoundCF-Medium.woff2 */; };
+		FA0A6FF7225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD6225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff2 */; };
+		FA0A6FF8225E67EA005CCA45 /* VisbyRoundCF-DemiBold.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD7225E67EA005CCA45 /* VisbyRoundCF-DemiBold.eot */; };
+		FA0A6FF9225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD8225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff */; };
+		FA0A6FFA225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FD9225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff */; };
+		FA0A6FFB225E67EA005CCA45 /* VisbyRoundCF-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FDA225E67EA005CCA45 /* VisbyRoundCF-Regular.woff */; };
+		FA0A6FFC225E67EA005CCA45 /* VisbyRoundCF-Regular.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FDB225E67EA005CCA45 /* VisbyRoundCF-Regular.eot */; };
+		FA0A6FFD225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FDC225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff2 */; };
+		FA0A6FFE225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FDD225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.eot */; };
+		FA0A6FFF225E67EA005CCA45 /* VisbyRoundCF-Bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FDE225E67EA005CCA45 /* VisbyRoundCF-Bold.woff */; };
+		FA0A7000225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FDF225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.eot */; };
+		FA0A7001225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE0225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff */; };
+		FA0A7002225E67EA005CCA45 /* VisbyRoundCF-Bold.eot in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE1225E67EA005CCA45 /* VisbyRoundCF-Bold.eot */; };
+		FA0A7003225E67EA005CCA45 /* VisbyRoundCF-Light.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE2225E67EA005CCA45 /* VisbyRoundCF-Light.woff2 */; };
+		FA0A7004225E67EA005CCA45 /* VisbyRoundCF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE4225E67EA005CCA45 /* VisbyRoundCF-Medium.otf */; };
+		FA0A7005225E67EA005CCA45 /* VisbyRoundCF-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE5225E67EA005CCA45 /* VisbyRoundCF-Heavy.otf */; };
+		FA0A7006225E67EA005CCA45 /* VisbyRoundCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE6225E67EA005CCA45 /* VisbyRoundCF-DemiBold.otf */; };
+		FA0A7007225E67EA005CCA45 /* VisbyRoundCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE7225E67EA005CCA45 /* VisbyRoundCF-Light.otf */; };
+		FA0A7008225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE8225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.otf */; };
+		FA0A7009225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FE9225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.otf */; };
+		FA0A700A225E67EA005CCA45 /* VisbyRoundCF-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FEA225E67EA005CCA45 /* VisbyRoundCF-Regular.otf */; };
+		FA0A700B225E67EA005CCA45 /* VisbyRoundCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA0A6FEB225E67EA005CCA45 /* VisbyRoundCF-Bold.otf */; };
+		FA0A700D225E775A005CCA45 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A700C225E775A005CCA45 /* UserCell.swift */; };
+		FA0A700F225E77D8005CCA45 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A700E225E77D8005CCA45 /* Globals.swift */; };
+		FA0A7011225E7A2C005CCA45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A7010225E7A2C005CCA45 /* User.swift */; };
 		FA3F721B225527A100C4741B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F721A225527A100C4741B /* ApiClient.swift */; };
 		FA3F721D2259729100C4741B /* RequestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F721C2259729100C4741B /* RequestLogger.swift */; };
 		FA3F721F22597A4A00C4741B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F721E22597A4A00C4741B /* HomeViewController.swift */; };
@@ -22,6 +59,43 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0A6FC5225E6759005CCA45 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FA0A6FC7225E67A6005CCA45 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		FA0A6FCB225E67EA005CCA45 /* VisbyRoundCF-Bold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Bold.woff2"; sourceTree = "<group>"; };
+		FA0A6FCC225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraBold.woff2"; sourceTree = "<group>"; };
+		FA0A6FCD225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraLight.woff2"; sourceTree = "<group>"; };
+		FA0A6FCE225E67EA005CCA45 /* VisbyRoundCF-Medium.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Medium.eot"; sourceTree = "<group>"; };
+		FA0A6FCF225E67EA005CCA45 /* VisbyRoundCF-Heavy.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Heavy.eot"; sourceTree = "<group>"; };
+		FA0A6FD0225E67EA005CCA45 /* VisbyRoundCF-Regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Regular.woff2"; sourceTree = "<group>"; };
+		FA0A6FD1225E67EA005CCA45 /* VisbyRoundCF-Light.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Light.woff"; sourceTree = "<group>"; };
+		FA0A6FD2225E67EA005CCA45 /* VisbyRoundCF-Medium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Medium.woff"; sourceTree = "<group>"; };
+		FA0A6FD3225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraLight.woff"; sourceTree = "<group>"; };
+		FA0A6FD4225E67EA005CCA45 /* VisbyRoundCF-Light.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Light.eot"; sourceTree = "<group>"; };
+		FA0A6FD5225E67EA005CCA45 /* VisbyRoundCF-Medium.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Medium.woff2"; sourceTree = "<group>"; };
+		FA0A6FD6225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Heavy.woff2"; sourceTree = "<group>"; };
+		FA0A6FD7225E67EA005CCA45 /* VisbyRoundCF-DemiBold.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-DemiBold.eot"; sourceTree = "<group>"; };
+		FA0A6FD8225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraBold.woff"; sourceTree = "<group>"; };
+		FA0A6FD9225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Heavy.woff"; sourceTree = "<group>"; };
+		FA0A6FDA225E67EA005CCA45 /* VisbyRoundCF-Regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Regular.woff"; sourceTree = "<group>"; };
+		FA0A6FDB225E67EA005CCA45 /* VisbyRoundCF-Regular.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Regular.eot"; sourceTree = "<group>"; };
+		FA0A6FDC225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-DemiBold.woff2"; sourceTree = "<group>"; };
+		FA0A6FDD225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraLight.eot"; sourceTree = "<group>"; };
+		FA0A6FDE225E67EA005CCA45 /* VisbyRoundCF-Bold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Bold.woff"; sourceTree = "<group>"; };
+		FA0A6FDF225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraBold.eot"; sourceTree = "<group>"; };
+		FA0A6FE0225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-DemiBold.woff"; sourceTree = "<group>"; };
+		FA0A6FE1225E67EA005CCA45 /* VisbyRoundCF-Bold.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Bold.eot"; sourceTree = "<group>"; };
+		FA0A6FE2225E67EA005CCA45 /* VisbyRoundCF-Light.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Light.woff2"; sourceTree = "<group>"; };
+		FA0A6FE4225E67EA005CCA45 /* VisbyRoundCF-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Medium.otf"; sourceTree = "<group>"; };
+		FA0A6FE5225E67EA005CCA45 /* VisbyRoundCF-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Heavy.otf"; sourceTree = "<group>"; };
+		FA0A6FE6225E67EA005CCA45 /* VisbyRoundCF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-DemiBold.otf"; sourceTree = "<group>"; };
+		FA0A6FE7225E67EA005CCA45 /* VisbyRoundCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Light.otf"; sourceTree = "<group>"; };
+		FA0A6FE8225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraBold.otf"; sourceTree = "<group>"; };
+		FA0A6FE9225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraLight.otf"; sourceTree = "<group>"; };
+		FA0A6FEA225E67EA005CCA45 /* VisbyRoundCF-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Regular.otf"; sourceTree = "<group>"; };
+		FA0A6FEB225E67EA005CCA45 /* VisbyRoundCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Bold.otf"; sourceTree = "<group>"; };
+		FA0A700C225E775A005CCA45 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FA0A700E225E77D8005CCA45 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		FA0A7010225E7A2C005CCA45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA3F721A225527A100C4741B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		FA3F721C2259729100C4741B /* RequestLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLogger.swift; sourceTree = "<group>"; };
 		FA3F721E22597A4A00C4741B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +123,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA0A6FC9225E67EA005CCA45 /* Visby Round v1.7w */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6FCA225E67EA005CCA45 /* Webfont */,
+				FA0A6FE3225E67EA005CCA45 /* OTF */,
+			);
+			path = "Visby Round v1.7w";
+			sourceTree = "<group>";
+		};
+		FA0A6FCA225E67EA005CCA45 /* Webfont */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6FCB225E67EA005CCA45 /* VisbyRoundCF-Bold.woff2 */,
+				FA0A6FCC225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff2 */,
+				FA0A6FCD225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff2 */,
+				FA0A6FCE225E67EA005CCA45 /* VisbyRoundCF-Medium.eot */,
+				FA0A6FCF225E67EA005CCA45 /* VisbyRoundCF-Heavy.eot */,
+				FA0A6FD0225E67EA005CCA45 /* VisbyRoundCF-Regular.woff2 */,
+				FA0A6FD1225E67EA005CCA45 /* VisbyRoundCF-Light.woff */,
+				FA0A6FD2225E67EA005CCA45 /* VisbyRoundCF-Medium.woff */,
+				FA0A6FD3225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff */,
+				FA0A6FD4225E67EA005CCA45 /* VisbyRoundCF-Light.eot */,
+				FA0A6FD5225E67EA005CCA45 /* VisbyRoundCF-Medium.woff2 */,
+				FA0A6FD6225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff2 */,
+				FA0A6FD7225E67EA005CCA45 /* VisbyRoundCF-DemiBold.eot */,
+				FA0A6FD8225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff */,
+				FA0A6FD9225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff */,
+				FA0A6FDA225E67EA005CCA45 /* VisbyRoundCF-Regular.woff */,
+				FA0A6FDB225E67EA005CCA45 /* VisbyRoundCF-Regular.eot */,
+				FA0A6FDC225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff2 */,
+				FA0A6FDD225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.eot */,
+				FA0A6FDE225E67EA005CCA45 /* VisbyRoundCF-Bold.woff */,
+				FA0A6FDF225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.eot */,
+				FA0A6FE0225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff */,
+				FA0A6FE1225E67EA005CCA45 /* VisbyRoundCF-Bold.eot */,
+				FA0A6FE2225E67EA005CCA45 /* VisbyRoundCF-Light.woff2 */,
+			);
+			path = Webfont;
+			sourceTree = "<group>";
+		};
+		FA0A6FE3225E67EA005CCA45 /* OTF */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A6FE4225E67EA005CCA45 /* VisbyRoundCF-Medium.otf */,
+				FA0A6FE5225E67EA005CCA45 /* VisbyRoundCF-Heavy.otf */,
+				FA0A6FE6225E67EA005CCA45 /* VisbyRoundCF-DemiBold.otf */,
+				FA0A6FE7225E67EA005CCA45 /* VisbyRoundCF-Light.otf */,
+				FA0A6FE8225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.otf */,
+				FA0A6FE9225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.otf */,
+				FA0A6FEA225E67EA005CCA45 /* VisbyRoundCF-Regular.otf */,
+				FA0A6FEB225E67EA005CCA45 /* VisbyRoundCF-Bold.otf */,
+			);
+			path = OTF;
+			sourceTree = "<group>";
+		};
 		FA40BB1722517BC400350333 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +201,12 @@
 				FA40BB2322517BC400350333 /* AppDelegate.swift */,
 				FA40BB2522517BC400350333 /* ViewController.swift */,
 				FA3F721E22597A4A00C4741B /* HomeViewController.swift */,
+				FA0A7010225E7A2C005CCA45 /* User.swift */,
+				FA0A700C225E775A005CCA45 /* UserCell.swift */,
+				FA0A700E225E77D8005CCA45 /* Globals.swift */,
+				FA0A6FC5225E6759005CCA45 /* CustomTextField.swift */,
+				FA0A6FC7225E67A6005CCA45 /* UIColorExtention.swift */,
+				FA0A6FC9225E67EA005CCA45 /* Visby Round v1.7w */,
 				FA40BB2722517BC400350333 /* Main.storyboard */,
 				FA40BB2A22517BC600350333 /* Assets.xcassets */,
 				FA40BB2C22517BC600350333 /* LaunchScreen.storyboard */,
@@ -151,9 +286,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0A700B225E67EA005CCA45 /* VisbyRoundCF-Bold.otf in Resources */,
+				FA0A700A225E67EA005CCA45 /* VisbyRoundCF-Regular.otf in Resources */,
+				FA0A6FFD225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff2 in Resources */,
+				FA0A7008225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.otf in Resources */,
+				FA0A7005225E67EA005CCA45 /* VisbyRoundCF-Heavy.otf in Resources */,
+				FA0A7007225E67EA005CCA45 /* VisbyRoundCF-Light.otf in Resources */,
+				FA0A6FEE225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff2 in Resources */,
 				FA40BB2E22517BC600350333 /* LaunchScreen.storyboard in Resources */,
+				FA0A6FFB225E67EA005CCA45 /* VisbyRoundCF-Regular.woff in Resources */,
+				FA0A6FFF225E67EA005CCA45 /* VisbyRoundCF-Bold.woff in Resources */,
+				FA0A6FF2225E67EA005CCA45 /* VisbyRoundCF-Light.woff in Resources */,
+				FA0A7004225E67EA005CCA45 /* VisbyRoundCF-Medium.otf in Resources */,
+				FA0A6FFA225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff in Resources */,
+				FA0A6FF4225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.woff in Resources */,
+				FA0A7000225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.eot in Resources */,
+				FA0A7006225E67EA005CCA45 /* VisbyRoundCF-DemiBold.otf in Resources */,
+				FA0A6FF9225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff in Resources */,
+				FA0A7009225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.otf in Resources */,
+				FA0A6FEC225E67EA005CCA45 /* VisbyRoundCF-Bold.woff2 in Resources */,
+				FA0A6FEF225E67EA005CCA45 /* VisbyRoundCF-Medium.eot in Resources */,
+				FA0A6FF0225E67EA005CCA45 /* VisbyRoundCF-Heavy.eot in Resources */,
+				FA0A6FF7225E67EA005CCA45 /* VisbyRoundCF-Heavy.woff2 in Resources */,
+				FA0A6FF6225E67EA005CCA45 /* VisbyRoundCF-Medium.woff2 in Resources */,
+				FA0A7001225E67EA005CCA45 /* VisbyRoundCF-DemiBold.woff in Resources */,
+				FA0A6FED225E67EA005CCA45 /* VisbyRoundCF-ExtraBold.woff2 in Resources */,
+				FA0A6FF8225E67EA005CCA45 /* VisbyRoundCF-DemiBold.eot in Resources */,
 				FA40BB2B22517BC600350333 /* Assets.xcassets in Resources */,
+				FA0A6FF1225E67EA005CCA45 /* VisbyRoundCF-Regular.woff2 in Resources */,
 				FA40BB2922517BC400350333 /* Main.storyboard in Resources */,
+				FA0A7003225E67EA005CCA45 /* VisbyRoundCF-Light.woff2 in Resources */,
+				FA0A7002225E67EA005CCA45 /* VisbyRoundCF-Bold.eot in Resources */,
+				FA0A6FFE225E67EA005CCA45 /* VisbyRoundCF-ExtraLight.eot in Resources */,
+				FA0A6FF3225E67EA005CCA45 /* VisbyRoundCF-Medium.woff in Resources */,
+				FA0A6FF5225E67EA005CCA45 /* VisbyRoundCF-Light.eot in Resources */,
+				FA0A6FFC225E67EA005CCA45 /* VisbyRoundCF-Regular.eot in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,9 +335,14 @@
 				FA3F72212259895500C4741B /* EndPoint.swift in Sources */,
 				FA3F721F22597A4A00C4741B /* HomeViewController.swift in Sources */,
 				FA3F72232259899A00C4741B /* HTTPMethod.swift in Sources */,
+				FA0A6FC6225E6759005CCA45 /* CustomTextField.swift in Sources */,
 				FA40BB2622517BC400350333 /* ViewController.swift in Sources */,
+				FA0A7011225E7A2C005CCA45 /* User.swift in Sources */,
+				FA0A700F225E77D8005CCA45 /* Globals.swift in Sources */,
 				FA3F7225225989ED00C4741B /* HTTPTask.swift in Sources */,
 				FA40BB2422517BC400350333 /* AppDelegate.swift in Sources */,
+				FA0A700D225E775A005CCA45 /* UserCell.swift in Sources */,
+				FA0A6FC8225E67A6005CCA45 /* UIColorExtention.swift in Sources */,
 				FA3F721B225527A100C4741B /* ApiClient.swift in Sources */,
 				FA3F721D2259729100C4741B /* RequestLogger.swift in Sources */,
 			);

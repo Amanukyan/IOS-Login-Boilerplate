@@ -13,7 +13,7 @@ class ApiClient {
     
     static var shared = ApiClient()
     
-    func perfomRequest(endPoint: EndPoint, completion: @escaping (Result<Any, Error>)->()) {
+    func perfomRequest<T:Decodable>(endPoint: EndPoint, completion: @escaping (Result<T, Error>)->()) {
         let urlRequest = buildRequest(from: endPoint)
         
         if urlRequest == nil {
@@ -22,15 +22,16 @@ class ApiClient {
         
         URLSession.shared.dataTask(with: urlRequest!) { (data, response, error) in
             do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
-                print("JSON:", json)
-                completion(.success(json))
+                let decoded = try JSONDecoder().decode(T.self, from: data!)
+                completion(.success(decoded))
             } catch let error {
                 print("ERROR:", error.localizedDescription)
                 completion(.failure(error))
             }
             }.resume()
     }
+    
+    
     fileprivate func buildRequest(from route: EndPoint) -> URLRequest? {
         
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
@@ -74,10 +75,10 @@ class ApiClient {
 extension ApiClient {
     
     
-    func register(username:String, password: String, completion: @escaping (Result<[String: Any],Error>)->()){
+    func register(username:String, password: String, completion: @escaping (Result<String,Error>)->()){
 
-        let registerEndpoint = UserApi.register(username: username, password: password)
-        perfomRequest(endPoint: registerEndpoint) { (result) in
+        let registerEndpoint = AuthApi.register(username: username, password: password)
+        perfomRequest(endPoint: registerEndpoint) { (result: Result<[String: String], Error>) in
             switch result {
             case .success:
                 self.login(username: username, password: password, completion: completion)
@@ -90,14 +91,14 @@ extension ApiClient {
     }
     
     
-    func login(username:String, password: String, completion: @escaping (Result<[String: Any],Error>)->()){
+    func login(username:String, password: String, completion: @escaping (Result<String,Error>)->()){
         
         let endpoint = AuthApi.login(username: username, password: password)
-        perfomRequest(endPoint: endpoint) { (result) in
+        perfomRequest(endPoint: endpoint) { (result: Result<[String: String], Error>) in
             switch result {
             case .success(let json):
-                print("")
-                completion(.success(json as! [String: Any]))
+                let token = json["token"]
+                completion(.success(token!))
             case .failure(let error):
                 completion(.failure(error))
             }

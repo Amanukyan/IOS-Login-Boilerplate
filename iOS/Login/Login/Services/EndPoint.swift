@@ -18,7 +18,7 @@ protocol EndPoint {
 
 
 public enum UserApi {
-    case register(username: String, password: String)
+    case getUsersList
 }
 
 extension UserApi: EndPoint {
@@ -28,13 +28,16 @@ extension UserApi: EndPoint {
     
     var path: String {
         switch self {
-        case .register:
-            return "register"
+        case .getUsersList:
+            return "list"
         }
     }
     
     var method: HTTPMethod {
-        return .post
+        switch self {
+        case .getUsersList:
+            return .get
+        }
     }
     
     var task: HTTPTask {
@@ -51,12 +54,8 @@ extension UserApi: EndPoint {
     
     var parameters: Parameters? {
         switch self {
-            
-        case .register(let username, let password):
-            return [
-                "username": username,
-                "password": password
-            ]
+        case .getUsersList:
+            return nil
         }
         
     }
@@ -76,6 +75,7 @@ extension UserApi: EndPoint {
 
 public enum AuthApi {
     case login(username: String, password: String)
+    case register(username: String, password: String)
 }
 
 extension AuthApi: EndPoint {
@@ -85,6 +85,8 @@ extension AuthApi: EndPoint {
     
     var path: String {
         switch self {
+        case .register:
+            return "register"
         case .login:
             return "login"
         }
@@ -108,7 +110,11 @@ extension AuthApi: EndPoint {
     
     var parameters: Parameters? {
         switch self {
-            
+        case .register(let username, let password):
+            return [
+                "username": username,
+                "password": password
+            ]
         case .login(let username, let password):
             return [
                 "username": username,
