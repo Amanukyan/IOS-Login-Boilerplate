@@ -56,6 +56,7 @@
 		FA40BB2922517BC400350333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA40BB2722517BC400350333 /* Main.storyboard */; };
 		FA40BB2B22517BC600350333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA40BB2A22517BC600350333 /* Assets.xcassets */; };
 		FA40BB2E22517BC600350333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA40BB2C22517BC600350333 /* LaunchScreen.storyboard */; };
+		FA79E9112265ACAA0040E773 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79E9102265ACAA0040E773 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		FA40BB2A22517BC600350333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA40BB2D22517BC600350333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA40BB2F22517BC600350333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA79E9102265ACAA0040E773 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				FA3F721A225527A100C4741B /* ApiClient.swift */,
+				FA79E9102265ACAA0040E773 /* AuthManager.swift */,
 				FA3F72202259895500C4741B /* EndPoint.swift */,
 				FA3F7227225AD48900C4741B /* ParameterEncoding.swift */,
 				FA3F72222259899A00C4741B /* HTTPMethod.swift */,
@@ -339,6 +342,7 @@
 				FA40BB2622517BC400350333 /* ViewController.swift in Sources */,
 				FA0A7011225E7A2C005CCA45 /* User.swift in Sources */,
 				FA0A700F225E77D8005CCA45 /* Globals.swift in Sources */,
+				FA79E9112265ACAA0040E773 /* AuthManager.swift in Sources */,
 				FA3F7225225989ED00C4741B /* HTTPTask.swift in Sources */,
 				FA40BB2422517BC400350333 /* AppDelegate.swift in Sources */,
 				FA0A700D225E775A005CCA45 /* UserCell.swift in Sources */,

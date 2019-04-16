@@ -98,6 +98,7 @@ extension ApiClient {
             switch result {
             case .success(let json):
                 let token = json["token"]
+                AuthManager.shared.store(token: token!)
                 completion(.success(token!))
             case .failure(let error):
                 completion(.failure(error))

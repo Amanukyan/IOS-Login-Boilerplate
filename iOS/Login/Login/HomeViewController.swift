@@ -34,6 +34,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func logout(){
+        AuthManager.shared.logout()
         let vc = ViewController()
         let appDel:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appDel.window?.rootViewController = vc

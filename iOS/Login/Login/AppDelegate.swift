@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if (AuthManager.shared.isLoggedIn) {
+            let rootVC = HomeViewController()
+            window?.rootViewController = UINavigationController(rootViewController: rootVC)
+        } else {
+            window?.rootViewController = ViewController()
+        }
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
