@@ -16,6 +16,8 @@ class UserCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = UIColor.white
+        layer.cornerRadius = 10
         prepareView()
     }
     
@@ -30,10 +32,12 @@ extension UserCell{
         
         // text Label
         textLabel = UILabel()
-        textLabel.frame = self.bounds
+        textLabel.frame = CGRect(x: 0, y: 0, width: frame.width * 0.9, height: frame.height)
+        textLabel.center.x = frame.width/2
         textLabel.frame.origin.y = frame.height - textLabel.frame.height
-        textLabel.textColor = UIColor.white
-        textLabel.font = Globals.fontHeavy
+        textLabel.textColor = UIColor.black
+        textLabel.textAlignment = .left
+        textLabel.font = Globals.fontHeavy?.withSize(20)
         addSubview(textLabel)
         
     }

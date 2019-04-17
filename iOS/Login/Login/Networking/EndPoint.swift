@@ -45,11 +45,16 @@ extension UserApi: EndPoint {
     }
     
     var headers: HTTPHeaders? {
-        let assigned: [String: String] = [
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-            "token": AuthManager.shared.token!
+        var assigned: HTTPHeaders = [
+            "accept": "application/json",
+            "accept-language": "",
+            "content-type": "application/json",
         ]
+        
+        if requiresAnyToken, let authToken = AuthManager.shared.tokenWithBearer {
+            assigned["authorization"] = authToken
+        }
+
         return assigned
     }
     
@@ -66,6 +71,13 @@ extension UserApi: EndPoint {
         }
         else {
             return .jsonEncoding
+        }
+    }
+    
+    var requiresAnyToken: Bool {
+        switch self {
+        case .getUsers:
+            return true
         }
     }
 }

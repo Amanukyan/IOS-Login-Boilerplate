@@ -17,6 +17,11 @@ struct AuthManager {
         return userDefault.string(forKey: tokenKey)
     }
     
+    var tokenWithBearer: String? {
+        guard let token = userDefault.string(forKey: tokenKey) else { return nil }
+        return "Bearer \(token)"
+    }
+    
     var isLoggedIn: Bool {
         return userDefault.string(forKey: tokenKey) != nil 
     }

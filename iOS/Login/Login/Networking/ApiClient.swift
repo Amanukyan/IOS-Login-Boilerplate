@@ -23,6 +23,7 @@ class ApiClient {
         RequestLogger.log(request: urlRequest!)
         
         URLSession.shared.dataTask(with: urlRequest!) { (data, response, error) in
+            // TODO Req status
             do {
                 let decoded = try JSONDecoder().decode(T.self, from: data!)
                 completion(.success(decoded))

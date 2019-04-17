@@ -18,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         if (AuthManager.shared.isLoggedIn) {
-            let rootVC = HomeViewController()
+            let rootVC = UserListVC()
             window?.rootViewController = UINavigationController(rootViewController: rootVC)
         } else {
-            window?.rootViewController = ViewController()
+            window?.rootViewController = LoginVC()
         }
         
         window?.makeKeyAndVisible()

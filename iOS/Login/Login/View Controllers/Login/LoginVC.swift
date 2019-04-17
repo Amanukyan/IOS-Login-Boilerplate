@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     var nameTextField: CustomTextField!
     var passwordTextField: CustomTextField!
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .purple
+        view.backgroundColor = Globals.colors.yellow
         prepareView()
     
     }
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     }
     
     func showHomeViewContoller(){
-        let vc = HomeViewController()
+        let vc = UserListVC()
         let appDel:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let navVC = UINavigationController(rootViewController: vc)
         

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class UserListVC: UIViewController {
     
     var collectionView: UICollectionView!
     fileprivate let cellIdentifier = "cell"
@@ -17,12 +17,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        view.backgroundColor = Globals.colors.yellow
         print("HomeViewController - View did load")
         
         let logoutButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
         self.navigationItem.rightBarButtonItem = logoutButton
-
+        self.title = "Users"
         
         UserService.getUser { [weak self] (result) in
             switch result {
@@ -41,7 +41,7 @@ class HomeViewController: UIViewController {
     
     @objc func logout(){
         AuthManager.shared.logout()
-        let vc = ViewController()
+        let vc = LoginVC()
         let appDel:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appDel.window?.rootViewController = vc
     }
@@ -52,10 +52,10 @@ class HomeViewController: UIViewController {
         
         // Setting of UICollectionViewFlowLayout
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         layout.itemSize = CGSize(width: view.bounds.width , height: cvRect.height)
         let leftRightInstet:CGFloat = 0 //self.bounds.width * 0.05
-        layout.sectionInset = UIEdgeInsets(top: 0, left: leftRightInstet, bottom: 0, right: leftRightInstet)
+        layout.sectionInset = UIEdgeInsets(top: 30, left: leftRightInstet, bottom: 0, right: leftRightInstet)
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
         
@@ -64,6 +64,7 @@ class HomeViewController: UIViewController {
         collectionView.register(UserCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.delegate   = self
         collectionView.dataSource = self
+        collectionView.alwaysBounceVertical = true
         collectionView.collectionViewLayout = layout
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
@@ -75,7 +76,7 @@ class HomeViewController: UIViewController {
     }
 }
 // COLLECTION VIEW
-extension HomeViewController: UICollectionViewDataSource {
+extension UserListVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return users.count
@@ -99,18 +100,19 @@ extension HomeViewController: UICollectionViewDataSource {
     
 }
 
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
+extension UserListVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: collectionView.frame.width * 0.9, height: 25)
+        return CGSize(width: collectionView.frame.width * 0.8, height: 60)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 5
     }
 }
+
