@@ -57,6 +57,8 @@
 		FA40BB2B22517BC600350333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA40BB2A22517BC600350333 /* Assets.xcassets */; };
 		FA40BB2E22517BC600350333 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA40BB2C22517BC600350333 /* LaunchScreen.storyboard */; };
 		FA79E9112265ACAA0040E773 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79E9102265ACAA0040E773 /* AuthManager.swift */; };
+		FA79E9132266B9710040E773 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79E9122266B9710040E773 /* AuthService.swift */; };
+		FA79E9152266BB990040E773 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79E9142266BB990040E773 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		FA40BB2D22517BC600350333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA40BB2F22517BC600350333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA79E9102265ACAA0040E773 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FA79E9122266B9710040E773 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FA79E9142266BB990040E773 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 				FA3F721A225527A100C4741B /* ApiClient.swift */,
 				FA79E9102265ACAA0040E773 /* AuthManager.swift */,
 				FA3F72202259895500C4741B /* EndPoint.swift */,
+				FA79E9142266BB990040E773 /* UserService.swift */,
+				FA79E9122266B9710040E773 /* AuthService.swift */,
 				FA3F7227225AD48900C4741B /* ParameterEncoding.swift */,
 				FA3F72222259899A00C4741B /* HTTPMethod.swift */,
 				FA3F7224225989ED00C4741B /* HTTPTask.swift */,
@@ -340,6 +346,7 @@
 				FA3F72232259899A00C4741B /* HTTPMethod.swift in Sources */,
 				FA0A6FC6225E6759005CCA45 /* CustomTextField.swift in Sources */,
 				FA40BB2622517BC400350333 /* ViewController.swift in Sources */,
+				FA79E9152266BB990040E773 /* UserService.swift in Sources */,
 				FA0A7011225E7A2C005CCA45 /* User.swift in Sources */,
 				FA0A700F225E77D8005CCA45 /* Globals.swift in Sources */,
 				FA79E9112265ACAA0040E773 /* AuthManager.swift in Sources */,
@@ -349,6 +356,7 @@
 				FA0A6FC8225E67A6005CCA45 /* UIColorExtention.swift in Sources */,
 				FA3F721B225527A100C4741B /* ApiClient.swift in Sources */,
 				FA3F721D2259729100C4741B /* RequestLogger.swift in Sources */,
+				FA79E9132266B9710040E773 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,10 @@
 
 import Foundation
 
-class User {
+class User: Decodable {
     
-    var name: String!
+    var username: String?
+    var _id: String?
+    var admin: Bool?
+    
 }

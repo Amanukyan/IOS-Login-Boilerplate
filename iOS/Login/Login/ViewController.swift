@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     @objc func loginButtonClicked(){
         let username = nameTextField.text!
         let password = passwordTextField.text!
-        ApiClient.shared.register(username: username, password: password) { (result) in
+        AuthService.register(username: username, password: password) { (result) in
             switch result {
             case .success(let json):
                 print("SUCCES:", json)

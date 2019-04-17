@@ -20,6 +20,8 @@ class ApiClient {
             return
         }
         
+        RequestLogger.log(request: urlRequest!)
+        
         URLSession.shared.dataTask(with: urlRequest!) { (data, response, error) in
             do {
                 let decoded = try JSONDecoder().decode(T.self, from: data!)
@@ -39,6 +41,7 @@ class ApiClient {
                                  timeoutInterval: 10.0)
         
         request.httpMethod = route.method.rawValue
+        addAdditionalHeaders(route.headers, request: &request)
         do {
             switch route.task {
             case .requestParameters(let parameters, let encoding):
@@ -68,92 +71,5 @@ class ApiClient {
         }
     }
     
-    
-}
-
-
-extension ApiClient {
-    
-    
-    func register(username:String, password: String, completion: @escaping (Result<String,Error>)->()){
-
-        let registerEndpoint = AuthApi.register(username: username, password: password)
-        perfomRequest(endPoint: registerEndpoint) { (result: Result<[String: String], Error>) in
-            switch result {
-            case .success:
-                self.login(username: username, password: password, completion: completion)
-            case .failure(let error):
-                print("Error: ", error)
-            }
-        }
-        
-        return;
-    }
-    
-    
-    func login(username:String, password: String, completion: @escaping (Result<String,Error>)->()){
-        
-        let endpoint = AuthApi.login(username: username, password: password)
-        perfomRequest(endPoint: endpoint) { (result: Result<[String: String], Error>) in
-            switch result {
-            case .success(let json):
-                let token = json["token"]
-                AuthManager.shared.store(token: token!)
-                completion(.success(token!))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-    
-}
-
-extension ApiClient{
-    
-    
-    func dummy(username:String, password: String, completion: @escaping (Result<[String: Any],Error>)->()){
-        
-        // URL
-        let urlString = "http://192.168.50.198:3000/api/auth/login"
-        let url = URL(string: urlString)!
-        
-        // URL Request
-        var urlRequest = URLRequest(url: url)
-        
-        // HTTP Method
-        urlRequest.httpMethod = "POST"
-        let parameters = [
-            "username": username,
-            "password": password
-        ]
-        
-        // Encoding
-        do {
-            let jsonAsData = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
-            urlRequest.httpBody = jsonAsData
-            if urlRequest.value(forHTTPHeaderField: "Content-Type") == nil {
-                urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            }
-        }catch {
-            
-        }
-        
-        RequestLogger.log(request: urlRequest)
-        
-        URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-            if let error = error {
-                completion(.failure(error))
-            }
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
-                print("JSON:", json)
-                completion(.success(json))
-            } catch {
-                print("ERROR:", error.localizedDescription)
-                completion(.failure(error))
-            }
-            }.resume()
-        
-    }
     
 }

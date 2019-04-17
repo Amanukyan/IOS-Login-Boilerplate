@@ -18,24 +18,24 @@ protocol EndPoint {
 
 
 public enum UserApi {
-    case getUsersList
+    case getUsers
 }
 
 extension UserApi: EndPoint {
     
     
-    var baseURL: URL { return URL(string: "http://192.168.50.198:3000/api/auth")! }
+    var baseURL: URL { return URL(string: "http://192.168.50.198:3000/api/user")! }
     
     var path: String {
         switch self {
-        case .getUsersList:
+        case .getUsers:
             return "list"
         }
     }
     
     var method: HTTPMethod {
         switch self {
-        case .getUsersList:
+        case .getUsers:
             return .get
         }
     }
@@ -48,13 +48,14 @@ extension UserApi: EndPoint {
         let assigned: [String: String] = [
             "Accept": "application/json",
             "Content-Type": "application/json",
+            "token": AuthManager.shared.token!
         ]
         return assigned
     }
     
     var parameters: Parameters? {
         switch self {
-        case .getUsersList:
+        case .getUsers:
             return nil
         }
         

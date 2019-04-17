@@ -23,11 +23,17 @@ class HomeViewController: UIViewController {
         let logoutButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(logout))
         self.navigationItem.rightBarButtonItem = logoutButton
 
-        for i in 0...10 {
-         
-            let user = User()
-            user.name = "user \(i)"
-            users.append(user)
+        
+        UserService.getUser { [weak self] (result) in
+            switch result {
+            case .success(let users):
+                DispatchQueue.main.async {
+                    self?.users = users
+                    self?.collectionView.reloadData()
+                }
+            case .failure(let error):
+                print("FAILURE:", error)
+            }
         }
         
         prepareView()
@@ -81,7 +87,7 @@ extension HomeViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! UserCell
         
         let user = users[indexPath.row]
-        cell.textLabel.text = user.name
+        cell.textLabel.text = user.username
         return cell
         
     }
